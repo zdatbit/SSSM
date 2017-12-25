@@ -1,4 +1,4 @@
-package org.zsl.testmybatis;  
+package com.zdatbit.test;  
   
 import org.apache.log4j.Logger;
 import org.junit.Test;

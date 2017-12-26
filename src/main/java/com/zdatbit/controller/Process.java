@@ -12,12 +12,13 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class Process {
 	
 	@RequestMapping("index")
-	public void index(HttpServletRequest request,HttpServletResponse response) throws IOException{
-		response.getWriter().write("hello world");
+	public ModelAndView index(HttpServletRequest request,HttpServletResponse response) throws IOException{
+		return new ModelAndView("admin/index");
 	}
 }
